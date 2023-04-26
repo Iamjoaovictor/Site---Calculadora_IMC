@@ -1,0 +1,209 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+body, html {
+    background: linear-gradient(to right, #000, #292924);
+}
+
+header {
+    background-image: linear-gradient(to right, #000, #292924);
+    position: fixed;
+
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+
+    align-items: var(--align-items);
+    text-align: var(--text-align);
+    padding: 1.5em;
+
+}
+
+#imc-header {
+    font-size: 30px;
+    color: #dfdf08;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 6rem;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+    align-items: center;
+}
+
+.nav-bar > a {
+    position: relative;
+    color: #dfdf08;
+    letter-spacing: 1px;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s all;
+}
+
+.nav-bar a:hover {
+    color: #fff;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.imc-titulo {
+
+    padding-top: 160px;
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 45px;
+    color: #dfdf08;
+}
+
+h2.imc-subtitulo-como-calcular {
+
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 35px;
+    color: #dfdf08;
+}
+
+p {
+    margin: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+div.container {
+
+    margin-top: 140px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 0 0  30px #fff;
+}
+
+div.titulo {
+
+    color: #dfdf08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    font: bold 3rem serif;
+    margin-bottom: 25px;
+}
+
+div.input {
+
+    color: #fff;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.input > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+}
+
+div.input label {
+    font: bold 1.5rem serif;
+}
+
+button {
+    width: 300px;
+    height: 45px;
+    font: bold 2.2rem serif;
+    background-color: #000;
+    color: #dfdf08;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+div.result {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 2.1rem serif;
+    box-shadow: 0 0 30px #dfdf08;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    user-select: none;
+}
+
+
+/* pagina alimetação saudável */
+h1.alimentacao-saudavel-titulo {
+
+    padding-top: 160px;
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 45px;
+    color: #dfdf08;
+}
+
+p#paragrafo-alimentacao {
+    margin-top: 3px;
+    padding: 50px;
+}
+
+img#imagem-alimentacao {
+
+    float: left;
+    margin-left: 70px;
+    padding-right: 130px;
+    width: 700px;
+    border-radius: 50px;
+}
